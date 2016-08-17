@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".multithread.MultiThreadActivity"></activity>
+        <activity android:name=".multithread.MultiThreadActivity" />
+        <activity android:name=".multithread.AsyncTaskActivity"></activity>
     </application>
 
 </manifest>

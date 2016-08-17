@@ -1,5 +1,6 @@
 package com.mmednet.common.multithread;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,8 @@ public class MultiThreadActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.button_asynctask:
+
+                startActivity(new Intent(MultiThreadActivity.this,AsyncTaskActivity.class));
 
                 break;
         }
