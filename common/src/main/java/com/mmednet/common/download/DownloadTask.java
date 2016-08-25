@@ -21,7 +21,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * Created by alpha on 2016/8/18.
+ * 下载任务
  */
 public class DownloadTask {
 
@@ -124,7 +124,6 @@ public class DownloadTask {
 
         @Override
         public void run() {
-
             if (!threadDAO.isExists(mThreadInfo.getUrl(), mThreadInfo.getId())) {
                 threadDAO.insertThread(mThreadInfo);
             }
@@ -156,8 +155,6 @@ public class DownloadTask {
                         mFinished += len;
                         //累加整个线程的下载进度
                         mThreadInfo.setFinished(mThreadInfo.getFinished() + len);
-
-
                         if (isPause) {
                             //保存当前线程的下载进度
                             threadDAO.updateThread(mThreadInfo.getUrl(), mThreadInfo.getId(), mThreadInfo.getFinished());

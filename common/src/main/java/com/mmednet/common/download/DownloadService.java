@@ -60,12 +60,12 @@ public class DownloadService extends Service {
         public void handleMessage(Message msg) {
             switch (msg.what){
                 case MSG_INIT:
+                    //开启一个下载任务，并把开启的下载任务放入Map中
                     FileInfo mFileInfo = (FileInfo) msg.obj;
-                    Log.d(TAG, "mFileInfo:" + mFileInfo);
                     DownloadTask mTask = new DownloadTask(DownloadService.this,mFileInfo,3);
                     mTask.download();
                     mTasks.put(mFileInfo.getId(),mTask);
-                    //发送启动命令广播
+                    //发送广播到activity，设置进度条
                     Intent intent = new Intent();
                     intent.setAction(ACTION_START);
                     intent.putExtra("fileInfo",mFileInfo);
