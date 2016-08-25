@@ -1,29 +1,16 @@
-package com.mmednet.common.download;
+package com.mmednet.common.multithread.download;
 
-import android.Manifest;
-import android.app.Notification;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.PackageManager;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.mmednet.common.FileListAdapter;
 import com.mmednet.common.R;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 

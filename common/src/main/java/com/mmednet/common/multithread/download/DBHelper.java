@@ -1,7 +1,6 @@
-package com.mmednet.common.download;
+package com.mmednet.common.multithread.download;
 
 import android.content.Context;
-import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 

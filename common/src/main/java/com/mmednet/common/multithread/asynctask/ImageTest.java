@@ -1,4 +1,4 @@
-package com.mmednet.common.multithread;
+package com.mmednet.common.multithread.asynctask;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -38,7 +38,7 @@ public class ImageTest extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_async_task);
+        setContentView(R.layout.activity_async_image_progress);
         mImageView = (ImageView) findViewById(R.id.imageview);
         mProgressBar = (ProgressBar) findViewById(R.id.progreebar);
         mBtnLoadImage = (Button) findViewById(R.id.btn_loadimage);

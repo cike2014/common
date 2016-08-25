@@ -1,4 +1,4 @@
-package com.mmednet.common.download;
+package com.mmednet.common.multithread.download;
 
 /**
  * Created by alpha on 2016/8/18.

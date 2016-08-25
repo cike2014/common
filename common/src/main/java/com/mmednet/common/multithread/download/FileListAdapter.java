@@ -1,4 +1,4 @@
-package com.mmednet.common;
+package com.mmednet.common.multithread.download;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,12 +10,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.mmednet.common.download.DownloadService;
-import com.mmednet.common.download.FileInfo;
+import com.mmednet.common.R;
 
-import java.io.File;
 import java.util.List;
 
 /**

@@ -1,12 +1,9 @@
-package com.mmednet.common.download;
+package com.mmednet.common.multithread.download;
 
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import com.mmednet.common.utils.Utils;
-
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
@@ -16,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

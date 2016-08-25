@@ -6,7 +6,7 @@
  * @date 2015-8-8 ����10:55:21
  * @version 1.0
  */
-package com.mmednet.common.download;
+package com.mmednet.common.multithread.download;
 
 import java.util.List;
 
@@ -29,7 +29,6 @@ public interface ThreadDAO
 	/**
 	 * 删除线程信息
 	 * @param url
-	 * @param thread_id
 	 * @return void
 	 * @author Yann
 	 * @date 2015-8-8 上午10:56:57

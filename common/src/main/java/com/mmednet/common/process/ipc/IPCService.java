@@ -1,4 +1,4 @@
-package com.mmednet.common.ipc;
+package com.mmednet.common.process.ipc;
 
 import android.app.Service;
 import android.content.Intent;

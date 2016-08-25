@@ -1,4 +1,4 @@
-package com.mmednet.common.download;
+package com.mmednet.common.multithread.download;
 
 import android.app.Notification;
 import android.app.NotificationManager;

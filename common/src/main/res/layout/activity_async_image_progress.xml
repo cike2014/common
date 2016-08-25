@@ -7,13 +7,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".process.ipc.IPCActivity">
+    tools:context=".multithread.asynctask.ImageTest">
 
-    <Button
-        android:id="@+id/bt_send"
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progreebar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/msg_to_service"
-        android:layout_centerInParent="true"/>
-
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btn_loadimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_loadimage"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

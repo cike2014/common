@@ -21,14 +21,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".multithread.MultiThreadActivity" />
-        <activity android:name=".multithread.ImageTest" />
-        <activity android:name=".multithread.ProgressBarTest" />
-        <activity android:name=".multithread.ThreadTest" />
-        <activity android:name=".multithread.HandlerThreadActivity" />
-        <activity android:name=".download.DownloadActivity" />
+        <activity android:name=".multithread.asynctask.ImageTest" />
+        <activity android:name=".multithread.asynctask.ProgressBarTest" />
+        <activity android:name=".multithread.handlerthread.HandlerThreadActivity" />
+        <activity android:name=".multithread.download.DownloadActivity" />
 
         <service
-            android:name=".download.DownloadService"
+            android:name=".multithread.download.DownloadService"
             android:enabled="true"
             android:exported="true" />
 
@@ -36,13 +35,16 @@
             android:name="XMHT_APPNAME"
             android:value="test" />
 
-        <activity android:name=".ipc.IPCActivity" />
+        <activity android:name=".process.ipc.IPCActivity" />
 
         <service
-            android:name=".ipc.IPCService"
+            android:name=".process.ipc.IPCService"
             android:enabled="true"
             android:exported="true"
-            android:process="com.qq.send.service"></service>
+            android:process="com.qq.send.service" />
+
+        <activity android:name=".process.ProcessActivity" />
+        <activity android:name=".multithread.asynctask.AsyncTaskActivity"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.mmednet.common.multithread;
+package com.mmednet.common.multithread.asynctask;
 
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;

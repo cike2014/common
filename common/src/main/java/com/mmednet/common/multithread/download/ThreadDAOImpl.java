@@ -1,4 +1,4 @@
-package com.mmednet.common.download;
+package com.mmednet.common.multithread.download;
 
 import java.util.ArrayList;
 import java.util.List;

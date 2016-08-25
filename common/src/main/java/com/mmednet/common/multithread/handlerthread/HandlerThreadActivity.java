@@ -1,4 +1,4 @@
-package com.mmednet.common.multithread;
+package com.mmednet.common.multithread.handlerthread;
 
 import android.os.Handler;
 import android.os.HandlerThread;
